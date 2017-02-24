@@ -25,7 +25,7 @@ Tradeworker.insert($scope.data)
         console.log(serv)
         
         console.log($scope.data)
-        $location.path('/');
+        $location.path('/showtradeworker');
       })
       .catch(function (error) {
         console.log(error);
