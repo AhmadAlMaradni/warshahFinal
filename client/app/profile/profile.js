@@ -11,7 +11,7 @@ angular.module('app.profile', [])
    if(window.localStorage.getItem('userId')){
      var userID = window.localStorage.getItem('userId');
    }
-
+   console.log(userID)
   	
  
   $scope.getProfile = function(){

@@ -13,9 +13,9 @@
     if(userFlag && passFlag){
       User.signin($scope.user)
       .then(function (data) {
+        console.log(data)
         console.log($scope.user.username)
         // console.log(data)
-        //console.log(data.user._id)
         $window.localStorage.setItem('com.book', data.token);
         $window.localStorage.setItem('user.book', $scope.user.username);
         $window.localStorage.setItem('userId', data.user._id);
